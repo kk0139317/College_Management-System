@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>|| Login ||</title>
+  <link rel="stylesheet" href="{% static 'css/login/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/login/responsive-style.css' %}">
+</head>
+
+<body>
+  <div class="whole-body">
+
+    <div class="sidebar">
+      <div class="sidebar-components" id="add-admin" >
+        ADMIN
+      </div>
+      <div class="sidebar-components" id="add-teacher">
+        TEACHER
+      </div>
+      <div class="sidebar-components" id="add-student" onclick="add_student()">
+        STUDENT
+      </div>
+    </div>
+
+  <script src="{% static 'script/script.js' %}"></script> 
+
+</html>

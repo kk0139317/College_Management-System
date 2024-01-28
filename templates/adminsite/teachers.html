@@ -1,0 +1,40 @@
+{% extends 'adminsite/layout.html' %}
+{% block body %}
+{% load static %}
+
+<div class="teacher-list-body">
+    <div class="row-01">
+        <div class="teacher-list">
+            Teachers-List
+        </div>
+        <a href="add-teacher">
+
+            <div class="add-teacher">
+                <span>Add-Teacher</span>
+            </div>
+        </a>
+    </div>
+    <div class="line"></div>
+    <div class="teacher-lists">
+     <div class="list-header">
+        <div>Teacher-ID</div>
+        <div>Name</div>
+        <div>Mobile</div>
+        <div>Email-Id</div>
+     </div>
+     {% for i in teacher_list %}
+     <div class="list-body">
+        <div>{{i.id}} </div>
+        <div>{{i.first_name}} {{i.last_name}}</div>
+        <div>{{i.mobile_number}}</div>
+        <div>{{i.email_id}}</div>
+        
+      </div>
+      {% endfor %}
+     
+    </div>
+</div>
+
+
+
+{% endblock body %}

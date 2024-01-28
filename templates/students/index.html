@@ -1,0 +1,309 @@
+{% extends 'adminsite/layout.html' %}
+{% block body %}
+{% load static %}
+<div class="index-row-1">
+    <div class="index-row-01-components" id="irp_student">
+        <div class="irp-01-img">
+            <img src="{% static 'images/student-icon.png' %}" alt="">
+        </div>
+        <div class="irp-01-text">
+            <span class="num">5000</span>
+            <span class="text">STUDENTS</span>
+        </div>
+    </div>
+    <div class="index-row-01-components" id="irp_employee">
+        <div class="irp-01-img">
+            <img src="{% static 'images/employee-icon.png' %}" alt="">
+        </div>
+        <div class="irp-01-text">
+            <span class="num">87</span>
+            <span class="text">EMPLOYEES</span>
+        </div>
+    </div>
+    <div class="index-row-01-components" id="irp_course">
+        <div class="irp-01-img">
+            <img src="{% static 'images/course-icon.png' %}" alt="">
+        </div>
+        <div class="irp-01-text">
+            <span class="num">18</span> <br>
+            <span class="text">COURSES</span>
+        </div>
+    </div>
+    <div class="index-row-01-components" id="irp_revenue">
+        <div class="irp-01-img">
+            <img src="{% static 'images/revenue-icon.png' %}" alt="">
+        </div>
+        <div class="irp-01-text">
+            <span class="num">6M</span>
+            <span class="text">REVENUE</span>
+        </div>
+    </div>
+    <div class="index-row-01-components" id="irp_schedule">
+        <span class="schedule">12/03/2022 schedule</span>
+        <span>1. Meating with teacher</span>
+        <span>2. Meating with </span>
+        <span>3. Meating with teacher</span>
+        <span>1. Meating with teacher</span>
+        <span>2. Meating with </span>
+        <span>3. Meating with teacher</span>
+        <span>1. Meating with teacher</span>
+        <span>2. Meating with </span>
+        <span>3. Meating with teacher</span>
+        <span>1. Meating with teacher</span>
+        <span>2. Meating with </span>
+        <span>3. Meating with teacher</span>
+    </div>
+</div>
+
+<div class="index-row-02">
+    <div class="index-attandance-chart">
+        <!-- <div class="attandance-chart-row1"></div> -->
+        <div class="attandance-chart-row2">
+            <div class="attandance-per-sub">
+                <h1>Attandance</h1>
+
+                <div class="attandance-box">
+                    <div class="subjects">
+                        <div class="attandance-percentage" id="Physics">
+                            <h2></h2>
+                            <h3>Physics</h3>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="attandance-percentage" id="Chemistry">
+                            <h2></h2>
+                            <h3>Chemistry</h3>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="attandance-percentage" id="Math">
+                            <h2></h2>
+                            <h3>Math</h3>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="attandance-percentage" id="Biology">
+                            <h2></h2>
+                            <h3>Biology</h3>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="attandance-percentage" id="Hindi">
+                            <h2></h2>
+                            <h3>Hindi</h3>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="attandance-percentage" id="English">
+                            <h2></h2>
+                            <h3>English</h3>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="attandance-percentage" id="Sanskrit">
+                            <h2></h2>
+                            <h3>Sanskrit</h3>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="attandance-percentage" id="Activity">
+                            <h2></h2>
+                            <h3>Activity</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="attandance-chart-row3"></div> -->
+    </div>
+    <div class="index-row-02-col-02">
+
+        <div class="aabb">
+            <div class="col-02-components">
+                <div class="wrapper">
+                    <div class="container chart" data-size="100" data-value="100" id="attandance_per" data-arrow="down">
+                    </div>
+                </div>
+            </div>
+            <div class="col-02-components">
+                <div class="main-circle">
+                    <div class="inner-circle-div"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="aabb">
+
+            <div class="col-02-components">
+                <div class="main-circle">
+                    <div class="inner-circle-div"></div>
+                </div>
+            </div>
+            <div class="col-02-components">
+                <div class="main-circle">
+                    <div class="inner-circle-div"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row-02-col-03">
+        <div class="wrapper-cleander">
+            <div id="calendari"></div>
+        </div>
+    </div>
+</div>
+<div class="last-row">
+    <div class="last-ro-col1">
+        <div class="student-fee">
+            Student Fee Details
+        </div>
+        <div class="fee-detail-body">
+            <table dues-fee>
+                <tr>
+                    <th>S.No</th>
+                    <th>Roll. No</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Fees</th>
+                    <th>Dues Date</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+
+>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>kundan</td>
+                    <td>kundan</td>
+                    <td>10000</td>
+                    <td> 12-1-2002</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div class="last-row-col-02">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="last-row-col-02">
+        <div></div>
+        <div></div>
+    </div>
+</div>
+{% endblock body %}

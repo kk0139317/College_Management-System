@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+    .main-div{
+        width: 256px;
+    }
+    .user-img-div{
+        width: 23%;
+    }
+    .last-row{
+        display: flex ;
+        flex-direction: column;
+    }
+    .last-row a {
+        margin-left: auto auto;
+        /* margin-top: 25vh; */
+        font-weight: bolder;
+        font-style: italic;
+        display: flex table-column;
+        text-decoration: none;
+        
+    }
+  } 

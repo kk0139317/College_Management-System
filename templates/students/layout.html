@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/student/style.css' %}">
+    <title>The-Management</title>
+</head>
+<body>
+    <!-- <div class="topbar">
+        <div class="topbar-admin"><h2>Admin</h2></div>
+    </div> -->
+<div class="sidebar" id="mySidepanel">
+    <div class="slider">
+        <div class="Asmin-side" id="admin_site">
+            <span>Admin<span>
+        </div>
+        <div class="line-3" onclick="open_close()" id="slider_button">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+    </div>
+    <div class="sidebar-components" id="sidebar_components">
+        <a href="/adminsite" class="component-link">
+            <div class="component">
+                <div class="component-img" id="dashbord-img">
+                    <img src="{% static 'images/dashbord.png' %}" alt="">
+                </div>
+                <div class="component_text" id="Dashbord-text">
+                    Dashbord
+                </div>
+            </div>
+        </a>
+        <a href="profile" class="component-link">
+            <div class="component">
+                <div class="component-img" id="profile-img">
+                    <img src="{% static 'images/profile.jpg' %}" alt="" >
+                </div>
+                <div class="component_text" id="profile">
+                    Profile
+                </div>
+            </div>
+        </a>
+        
+        <a href="" class="component-link">
+            <div class="component">
+                <div class="component-img">
+                    <img src="{% static 'images/branches.png' %}" alt="">
+                </div>
+                <div class="component_text" id="branches">
+                    Branches
+                </div>
+            </div>
+        </a>
+
+        <a href="teachers" class="component-link">
+            <div class="component">
+                <div class="component-img">
+                    <img src="{% static 'images/teachers.png' %}" alt="">
+                </div>
+                <div class="component_text" id="teachers">
+                    Teachers
+                </div>
+            </div>
+        </a>
+        <a href="students" class="component-link">
+            <div class="component">
+                <div class="component-img">
+                    <img src="{% static 'images/student.png' %}" alt="">
+                </div>
+                <div class="component_text" id="students">
+                    Students
+                </div>
+            </div>
+        </a>
+        <a href="" class="component-link">
+            <div class="component">
+                <div class="component-img">
+                    <img src="{% static 'images/notification.png' %}" alt="">
+                </div>
+                <div class="component_text" id="notyfications">
+                    Notification
+                </div>
+            </div>
+        </a>
+         
+
+    </div>
+</div>
+<div class="main-body" id="main_body">
+
+<div class="index-row-01">
+    <div class="left">
+        <span>
+            COllege Admin
+        </span>
+    </div>
+    <div class="right">
+        <div class="search">
+            <input type="search" placeholder="Search">
+            <img src="{% static 'images/search.png' %}" alt="">
+        </div>
+        <!-- <div class="message">
+             <img src="{% static 'images/email.png' %}" alt=""> 
+        </div>
+        <div class="alert">
+             <img src="{% static 'images/alert.png' %}" alt=""> 
+        </div> -->
+    </div>
+</div>
+    {% block body %}
+    {% endblock body %}
+</div>
+
+
+
+    <script src="{% static 'script/adminsite/script.js' %}"></script>
+</body>
+</html>

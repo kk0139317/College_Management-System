@@ -1,0 +1,39 @@
+{% extends 'adminsite/layout.html' %}
+{% block body %}
+{% load static %}
+
+<div class="teacher-list-body">
+  <div class="row-01">
+      <div class="teacher-list">
+          Students-List
+      </div>
+      <a href="add-student">
+
+          <div class="add-teacher">
+              <span>Add-Student</span>
+          </div>
+      </a>
+  </div>
+  <div class="line"></div>
+
+  <div class="studentlist-header">
+    <div class="header-component"> S.No: </div>
+    <div class="header-component"> Name </div>
+    <div class="header-component"> Roll No</div>
+    <div class="header-component"> Branch</div>
+    <div class="header-component"> Semester</div>
+    <div class="header-component"> Status</div>
+    <div class="header-component"> View</div>
+  </div>
+  {% for i in student_list %}
+  <div class="studentlist">
+    <div class="header-component"> {{i.id}} </div>
+    <div class="header-component"> {{i.first_name}} {{i.last_name}} </div>
+    <div class="header-component"> {{i.roll_number}}</div>
+    <div class="header-component"> {{i.branch}}</div>
+    <div class="header-component"> {{i.semester}} </div>
+    <div class="header-component"> {{i.status}}</div>
+    <div class="header-component"> View</div>
+  </div>
+  {% endfor %}
+{% endblock body %}

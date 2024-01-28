@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../userauth"
+		},
+		{
+			"path": "../../../../../../../../Hostel"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "College"
+	}
+}

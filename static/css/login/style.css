@@ -1,0 +1,320 @@
+body{
+    margin: 0%;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    /* opacity: 30%; */
+    filter: blur(0px);
+    padding-top: 25vh;
+    background: rgb(255,102,102);
+    background: -moz-linear-gradient(106deg, rgba(255,102,102,1) 0%, rgba(223,113,255,1) 44%, rgba(255,244,143,1) 81%);
+    background: -webkit-linear-gradient(106deg, rgba(255,102,102,1) 0%, rgba(223,113,255,1) 44%, rgba(255,244,143,1) 81%);
+    background: linear-gradient(106deg, rgba(255,102,102,1) 0%, rgba(223,113,255,1) 44%, rgba(255,244,143,1) 81%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6666",endColorstr="#fff48f",GradientType=1);
+}
+a{
+    text-decoration: none;
+}
+.main-div{
+    background: white;
+    height: 50vh;
+    width: 400px;
+    margin: auto;
+    padding: auto;
+    /* margin-top: -9vh; */
+    opacity: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
+    box-shadow: 0px 5px 8px #452749;
+        
+
+    
+    /* margin-top: 25vh; */
+}
+
+.avatar{
+    height: 18vh;
+    width: 18vh;
+    margin: auto;
+    margin-top: 0;
+    opacity: 1;
+    z-index: 1;
+}
+.avatar-image{
+    height: 100%;
+    opacity: 1;
+    width: 100%;
+    z-index: 2;
+    margin-top: -9vh;
+}
+.username{
+    background-color: white;
+    height: 15%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    border: 1px solid #452749;
+}
+.user-img-div{
+    height: 100%;
+    background-color: white;
+    width:16%;
+}
+.user-img{
+    height: 200%;
+    margin:-36%;
+    
+    
+}
+.username input{
+    width: 84%;
+    height: auto;
+    background-color: white;
+    border: none;
+    padding-left: 5%;
+}
+
+.password{
+    background-color: rgb(212, 231, 248);
+    height: 15%;
+    width: 80%;
+    margin: 2vh auto ;
+    display: flex;
+    border: 1px solid #452749;
+}
+
+.password-img-div{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    width:17%;
+}
+
+
+.password-img{
+    height: 100%;
+    /* margin:-36%; */
+    
+    
+}
+.password input{
+    width: 84%;
+    height: auto;
+    background-color: white;
+    border: none;
+    padding-left: 5%;
+}
+.last-row{
+    margin-top: 5vh;
+}
+
+
+.last-row a{
+    margin-left: 15%;
+    /* margin-top: 25vh; */
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.login-btn{
+    width: 300px;
+    margin: 1px auto;
+    padding: auto;
+    /* background-color: black; */
+    height: 8vh;
+    opacity: 70%;
+    /* background-color: #F7D4F8; */
+    border-radius:0px 0px 15px 15px;
+    /* box-shadow: 1px 1px #888888; */
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.submit{
+    background: none;
+    text-decoration: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border-radius:0px 0px 15px 15px;
+    border: none;
+    opacity: 1;
+    /* box-shadow: 1px 1px #888888; */
+    font-size: 25px;
+    color: blue;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+
+/* hover  */
+
+.submit:active{
+    color: white;
+    background-color: blue;
+}
+.submit:hover{
+    color: white;
+}
+
+
+
+.login-btn {
+    background-image: linear-gradient(#1095c1,#1095c1);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .4s;
+  }
+  .login-btn:hover {
+    background-size: 100% 100%;
+    color: white;
+  }
+
+  .login-btn:active{
+      color: white;
+      background-color: blue;
+
+  }
+
+
+
+  /* create-user page css  */
+
+.outer-box{
+    height: 100%;
+    width: 400px;
+    /* background-color: #1095c1; */
+    margin-top: -125px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.iner-box{
+    height: 150px;
+    width: 300px;
+    /* margin-top: auto; */
+    margin-bottom: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    text-align: center;
+    padding: auto;
+    margin-right: auto;
+    color: white;
+    /* padding-top: 30px; */
+    align-items: center;
+    background: linear-gradient(90deg, rgb(95, 95, 250),  rgb(44, 44, 44));
+    box-shadow: 2px 2px 2px 2px 2px white;
+}
+.iner-box a{
+    color: white;
+    text-decoration: none;
+    /* margin-top: ; */
+}
+
+
+
+/* Admin-signup page  */
+
+.contents{
+    height: 85%;
+    width: 500px;
+    background-color: white;
+    margin-top: -125px;
+    margin-left: auto ;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+
+.all-form{
+    height: 95%;
+    width: 600px;
+    margin-top: -140px;
+    /* margin-bottom: 60px; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.sidebar{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    background-color: gray;
+}
+
+.sidebar-components{
+    height: 50px;
+    width: 80%;
+    margin-left: 20%;
+    /* background-color: yellow; */
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    /* background-color: #1095c1; */
+    color: white;
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.form-body{
+    height: auto;
+    margin-top: 50px;
+    width: 80%;
+    overflow-y: scroll;
+    /* background-color: #1095c1; */
+}
+
+.whole-body{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* overflow-y: scroll; */
+    display: flex;
+}
+
+/* .add-admin{
+    margin-left: -1000px;
+} */
+
+
+#add-admin-form{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#add-admin{
+    background-color: white;
+    color: blue;
+}
+
+#add-teacher-form{
+    width: 0px;
+    height: 0px;
+    overflow-x: hidden;
+}
+/* #add-teacher{
+    background-color: white;
+    color: blue;
+} */
+/* #add-student{
+    background-color: white;
+    color: blue;
+} */
+#add-student-form{
+    width: 0px;
+    height: 0px;
+    overflow-x: hidden;
+}
